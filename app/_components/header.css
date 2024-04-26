@@ -1,0 +1,32 @@
+.header-container {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+}
+
+.header-logo {
+  width: 100%;
+}
+.header-pages-Link {
+  color: black;
+  text-decoration: none;
+  margin-right: 21px;
+  font-size: 18px;
+}
+.header-inner-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-link {
+  text-decoration: none;
+  padding: 7px 25px;
+  color: black;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.header-link-hover:hover {
+  background: #03858b !important;
+}

@@ -1,10 +1,11 @@
- 
 import { configureStore } from "@reduxjs/toolkit";
-import { apiSlice } from "./slices/product_Slice";
-export const store = configureStore({
-  reducer: {
-    [apiSlice.reducerPath]: apiSlice.reducer,
-  },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(apiSlice.middleware),
-});
+import cartReducer from "./slices/cart-slice";
+
+export const makeStore = () =>
+  configureStore({
+    reducer: { cartReducer },
+  });
+export const store = makeStore();
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

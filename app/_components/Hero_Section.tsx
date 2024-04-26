@@ -65,7 +65,7 @@ export default function HeroSection() {
               },
             }}
           >
-            hello
+            Getting started
           </Button>
           <Button
             variant="outlined"
@@ -79,7 +79,7 @@ export default function HeroSection() {
               },
             }}
           >
-            hello
+            Learn More
           </Button>
         </ButtonBox>
       </Box>
